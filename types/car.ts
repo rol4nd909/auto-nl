@@ -204,16 +204,6 @@ type MrbCost = {
   costPerMonth: number;
 };
 
-export type Car = {
-  id: string;
-  brand: string;
-  model: string;
-  type: string;
-  vehicleTitle: string;
-  price: number;
-  imageUrl?: string;
-  hasTowbar: boolean;
-  hasCarplay: boolean;
-  hasAndroidAuto: boolean;
-  towingBrakedWeight: number | null;
+export type CarApiResponse = {
+  data: CarData[];
 };
